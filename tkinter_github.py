@@ -2,17 +2,12 @@ import tkinter
 from tkinter import ttk
 from tkinter import PhotoImage
 import webbrowser
-from tkinter import messagebox
 
 def name():
     entry1 = ent1.get()
     entry2 = ent2.get()
-    url = 'https://yandex.uz/search/?text=' + entry1 + entry2
+    url = 'https://github.com/' + entry1 + entry2
     webbrowser.open_new_tab(url)
-    messagebox.showinfo(
-        title='Otpravleno',
-        message=f'Uspeshno Otpravleno')
-
 
 window = tkinter.Tk()
 window.title('Email and password')
@@ -31,7 +26,6 @@ label1['bg'] = '#696969'
 label1['font'] = 'Roboto 10 bold'
 ent1 = ttk.Entry(window)
 ent1.place(x=170, y=170)
-
 
 label2 = tkinter.Label(text = "Password: ")
 label2.place(x = 100, y = 240)

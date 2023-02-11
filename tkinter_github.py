@@ -28,7 +28,7 @@ def show_hide_code():
         but2.configure(text=show_code, bg='green')
     else:
         ent2.configure(show='●')
-        but2.configure(text=hide_code)
+        but2.configure(text=hide_code, bg='#83838B')
 
 img = tkinter.PhotoImage(file = "./Tkinter/image/github.png")
 imgbx = tkinter.Label(image = img)
@@ -56,6 +56,6 @@ but1.config(background='green', foreground='white')
 
 but2 = tkinter.Button(frame, text=hide_code, command=show_hide_code)
 but2.place(x=325, y=270, width=20, height=23)
-but2['bg'] = 'red'
+but2['bg'] = '#83838B'
 
 window.mainloop()
